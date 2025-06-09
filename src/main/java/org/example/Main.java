@@ -11,34 +11,47 @@ public class Main {
     }
 
     public static void mainMenu() {
+        label:
         while (true) {
             System.out.println("--------------------------------");
             System.out.println(" Main Menu");
             System.out.println("--------------------------------");
             System.out.println("1. Enter Normal Sale");
             System.out.println("2. Enter Custom Sale");
-            System.out.println("3. Display Inventory");
-            System.out.println("4. Display Money");
-            System.out.println("5. Buy Supplies");
-            System.out.println("6. Exit");
+            System.out.println("3. Enter Discount Sale"); // inserted NEW discounted sale
+            System.out.println("4. Display Inventory");
+            System.out.println("5. Display Money");
+            System.out.println("6. Buy Supplies");
+            System.out.println("7. Exit");
 
             String choice = scanner.nextLine();
 
-            if (choice.equals("1")) {
-                enterNormalSale();
-            } else if (choice.equals("2")) {
-                enterCustomSale();
-            } else if (choice.equals("3")) {
-                displayInventory();
-            } else if (choice.equals("4")) {
-                displayMoney();
-            } else if (choice.equals("5")) {
-                buySupplies();
-            } else if (choice.equals("6")) {
-                System.out.println("Goodbye!");
-                break;
-            } else {
-                System.out.println("Invalid choice. Please try again.");
+            // changed if statement to switch statement after IntelliJ suggestion
+            switch (choice) {
+                case "1":
+                    enterNormalSale();
+                    break;
+                case "2":
+                    enterCustomSale();
+                    break;
+                case "3":  // inserted NEW discount sale
+                    enterDiscountSale();
+                    break;
+                case "4":
+                    displayInventory();
+                    break;
+                case "5":
+                    displayMoney();
+                    break;
+                case "6":
+                    buySupplies();
+                    break;
+                case "7":
+                    System.out.println("Goodbye!");
+                    break label;
+                default:
+                    System.out.println("Invalid choice. Please try again.");
+                    break;
             }
 
         }
@@ -78,6 +91,23 @@ public class Main {
             }
         }
     }
+
+    // NEW Discounted sale option
+    public static void enterDiscountSale() {
+        System.out.println("Enter the number of lemonades to sell:");
+        int numLemonades = Integer.parseInt(scanner.nextLine());
+        System.out.println("Enter the discount percentage:");
+        int discountAmount = Integer.parseInt(scanner.nextLine());
+
+        for (int i = 0; i < numLemonades; i++) {
+            if (lemonadeStand.sellLemonade(discountAmount)) {
+                System.out.println("Lemonade sold for " + discountAmount + "% off!");
+            } else {
+                System.out.println("Not enough supplies to sell lemonade.");
+            }
+        }
+    }
+
 
     public static void displayInventory() {
         System.out.println("Lemons: " + lemonadeStand.getLemons());

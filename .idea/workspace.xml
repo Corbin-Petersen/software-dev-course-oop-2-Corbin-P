@@ -5,15 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="303ccc50-aa5e-4f54-be84-fa30f99f558a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Lemonade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/LemonadeStand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/LemonadeStandTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/LemonadeTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Lemonade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Lemonade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LemonadeStand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/LemonadeStand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/LemonadeStandTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/LemonadeStandTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +39,8 @@
   "keyToString": {
     "JUnit.All in software-dev-course-oop-2.executor": "Run",
     "JUnit.LemonadeStandTests.executor": "Run",
+    "JUnit.LemonadeStandTests.testSellDiscountedLemonade.executor": "Run",
+    "JUnit.LemonadeTests.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -50,7 +49,7 @@
     "last_opened_file_path": "/home/mikel/projects/java-new-curriculum/software-dev-course-oop-2/pom.xml"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.All in software-dev-course-oop-2">
+  <component name="RunManager" selected="JUnit.LemonadeStandTests.testSellDiscountedLemonade">
     <configuration name="All in software-dev-course-oop-2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="software-dev-course-oop-2" />
       <option name="PACKAGE_NAME" value="" />
@@ -74,10 +73,43 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LemonadeStandTests.testSellDiscountedLemonade" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="software-dev-course-oop-2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.LemonadeStandTests" />
+      <option name="METHOD_NAME" value="testSellDiscountedLemonade" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LemonadeTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="software-dev-course-oop-2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.LemonadeTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in software-dev-course-oop-2" />
+        <item itemvalue="JUnit.LemonadeStandTests.testSellDiscountedLemonade" />
+        <item itemvalue="JUnit.LemonadeTests" />
         <item itemvalue="JUnit.LemonadeStandTests" />
+        <item itemvalue="JUnit.All in software-dev-course-oop-2" />
       </list>
     </recent_temporary>
   </component>
